@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <!--<meta http-equiv="Content-Language" content="nl-BE"> Only use if site is in non US english -->
+  <!--<meta name="Language" content="english"> Only use if site is in non US english -->
+  <meta charset="utf-8" />
+  <meta name="description" content="">
+
+  <title>Get your instagram user ID</title>
+  
+  <link rel="stylesheet" href="screen.css" type="text/css" media="screen" charset="utf-8">
+  
+  <script src="http://www.google.com/jsapi?key="></script>
+  <script>
+    google.load("jquery", "1.5");
+  </script>
+  <script src="application.js"></script>
+
+</head>
+<body>
+  <div id="wrapper">
+    <p class="js-alert">You need javascript support for this. <br>Either it's turned of or your browser doesn't support it.</p>
+    <h1>Get your instagram user ID</h1>
+    <section>
+      <a id="login" href="https://instagram.com/oauth/authorize/?client_id=7ff0c4cbf5e84da98722cc2250fce08a&amp;redirect_uri=http://labs.dev/get-instagram-user-id/&amp;response_type=token">Log into your Instagram</a>
+      <a id="get-user-data" href="#">Get my user data</a>
+    </section>
+    <div id="result"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+  line-height: 1.5em;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 600px;
+}
+
+.js-alert {
+  display: none;
+  padding: 5px 10px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+  background: #FF6B6B;
+  color: #821D1D;
+}
+html.no-js .js-alert {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  padding: 5px 10px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px; 
+  font-size: 24px;
+  line-height: 1em;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #23538a;
+  filter: dropshadow(color=#23538a, offx=1, offy=1); 
+  background: #a7cfdf; /* old browsers */
+  background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7cfdf), color-stop(100%,#23538a)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* ie */
+}
+
+section {
+  display: block;
+  margin: 0 0 15px 0;
+  padding: 20px;
+  background: #E9F1F4;
+  border: 1px solid #CCC;
+  border-top: none;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#result {
+  display: none;
+  padding: 5px 10px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+  background: #B3FF56;
+  color: #4D721E;
+}
+
+#get-user-data,
+#login {
+  display: block;
+  text-decoration: none;
+  color: #18406B;
+}
+
+body.not-logged-in #get-user-data { display: none; }
+body.not-logged-in #login { display: block; }
+
+body.logged-in #get-user-data { display: block; }
+body.logged-in #login { display: none; }
